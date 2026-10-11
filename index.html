@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Larica's Burguer</title>
-  <link rel="icon" type="image/png" href="assets/icons/laricas logo branco.png">
 
-  <meta name="description" content="Larica's Burguer: hambúrguer artesanal preparado com paixão em Salvador. Conheça nossa cultura, nosso time e nosso cardápio de dar água na boca.">
-  <meta name="keywords" content="hamburguer artesanal, Salvador, Rio Vermelho, burger, lanches, delivery ifood, cardápio burguer, laricas burguer">
+  <title>Larica's Burguer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/laricas-logo-png.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/laricas-logo-png.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/laricas-logo-png.png">
+
+
+  <meta name="description"
+    content="Larica's Burguer: hambúrguer artesanal preparado com paixão em Salvador. Conheça nossa cultura, nosso time e nosso cardápio de dar água na boca.">
+  <meta name="keywords"
+    content="hamburguer artesanal, Salvador, Rio Vermelho, burger, lanches, delivery ifood, cardápio burguer, laricas burguer">
   <meta name="author" content="Larica's Burguer">
   <meta name="robots" content="index, follow">
-  
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://laricasburguer.com.br/">
   <meta property="og:title" content="Larica's Burguer">
-  <meta property="og:description" content="Entendemos de sabor e suculência. Conheça nossos hambúrgueres artesanais e faça seu pedido.">
+  <meta property="og:description"
+    content="Entendemos de sabor e suculência. Conheça nossos hambúrgueres artesanais e faça seu pedido.">
   <meta property="og:image" content="assets/photos/cardapio/xLaEle.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="css/estilos.css">
   <script src="js/principal.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script src="js/lottie-hamburguer.js" defer></script>
 </head>
+
 <body>
 
   <header class="cabecalho-principal" id="cabecalho-topo">
     <div class="recipiente-conteudo">
       <nav class="navegacao-barra" aria-label="Navegação Principal">
         <a href="#secao-inicio" class="marca-link" title="Larica's Burguer - Página Inicial">
-          <img src="assets/icons/laricas logo branco.png" alt="Logotipo Larica's Burguer" class="marca-logo" width="196" height="40">
+          <div class="marca-logo-container">
+            <img src="assets/icons/laricas logo branco.png" alt="Logotipo Larica's Burguer" class="marca-logo"
+              width="40" height="40">
+          </div>
+          <span class="marca-texto">LARICA'S BURGUER</span>
         </a>
 
-        <button class="botao-menu-mobile" id="botao-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navegacao-menu">
+        <button class="botao-menu-mobile" id="botao-menu-mobile" aria-label="Abrir menu de navegação"
+          aria-expanded="false" aria-controls="navegacao-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -58,23 +75,21 @@
           <div class="texto-inicio">
             <h1 class="titulo-inicio" id="titulo-secao-inicio">
               <span class="titulo-linha-um">NÓS ENTENDEMOS DE</span>
-              <span class="destaque-gradiente-texto">SABOR E SUCULÊNCIA</span>
+              <span class="destaque-gradiente-texto">SABOR E SUCULÊNCIA.</span>
             </h1>
             <p class="descricao-inicio">
-              A Larica's Burguer nasceu para transformar o conceito de hambúrguer artesanal em Salvador. Ingredientes selecionados com primor, carne fresca moldada na chapa e receitas autorais criadas para proporcionar a experiência definitiva de suculência e sabor a cada mordida.
+              A Larica's Burguer nasceu para transformar o conceito de hambúrguer artesanal em Salvador. Ingredientes
+              selecionados com primor, carne fresca moldada na chapa e receitas autorais criadas para proporcionar a
+              experiência definitiva de suculência e sabor a cada mordida.
             </p>
           </div>
 
           <div class="area-icone-inicio">
-            <div class="recipiente-animacao-hamburguer" id="recipiente-lottie-hamburguer" title="Animação Hambúrguer Larica's Burguer">
-              <img 
-                src="assets/photos/hero-burger.png" 
-                alt="Ilustração do hambúrguer artesanal suculento Larica's Burguer" 
-                class="ilustracao-hamburguer-reserva"
-                width="540" 
-                height="460"
-                fetchpriority="high"
-              >
+            <div class="recipiente-animacao-hamburguer" id="recipiente-lottie-hamburguer"
+              title="Animação Hambúrguer Larica's Burguer">
+              <img src="assets/photos/hero-burger.png"
+                alt="Ilustração do hambúrguer artesanal suculento Larica's Burguer"
+                class="ilustracao-hamburguer-reserva" width="540" height="460" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -82,15 +97,15 @@
     </section>
 
     <section class="secao-cultura" id="secao-cultura" aria-labelledby="titulo-secao-cultura">
-      
-      <div class="banner-cultura-topo">
-        <img src="assets/icons/fire.png" alt="Fogo decorativo à esquerda" class="fogo-decorativo-cultura fogo-esquerda" loading="lazy" aria-hidden="true">
-        <img src="assets/icons/fire.png" alt="Fogo decorativo à direita" class="fogo-decorativo-cultura fogo-direita" loading="lazy" aria-hidden="true">
 
+      <div class="banner-cultura-topo">
         <div class="recipiente-conteudo">
           <h2 class="titulo-cultura" id="titulo-secao-cultura">CULTURA</h2>
           <p class="texto-cultura-resumo">
-            A Larica's Burguer é uma hamburgueria artesanal de Salvador com modelo híbrido. O grande pulo do gato dela é que ela não comete o erro das hamburguerias comuns: ela não usa a mesma cozinha para fazer o lanche do salão e o lanche do iFood. Salão tem sua cozinha no Rio Vermelho e o delivery roda em Dark Kitchens separadas pela cidade. Isso garante velocidade e qualidade nos dois canais.
+            A Larica's Burguer é uma hamburgueria artesanal de Salvador com modelo híbrido. O grande pulo do gato dela é
+            que ela não comete o erro das hamburguerias comuns: ela não usa a mesma cozinha para fazer o lanche do salão
+            e o lanche do iFood. Salão tem sua cozinha no Rio Vermelho e o delivery roda em Dark Kitchens separadas pela
+            cidade. Isso garante velocidade e qualidade nos dois canais.
           </p>
 
           <nav class="navegacao-cultura" aria-label="Navegação da Cultura Organizacional">
@@ -102,64 +117,71 @@
       </div>
 
       <article class="bloco-cultura-item bloco-missao" id="bloco-missao" aria-labelledby="titulo-missao">
-        <div class="recipiente-conteudo">
-          <div class="grade-missao">
-            <div class="imagem-missao-container">
-              <img 
-                src="assets/photos/img_trio_funcionario.webp" 
-                alt="Trio de colaboradores da Larica's Burguer segurando o boné oficial da marca" 
-                class="imagem-missao" 
-                loading="lazy" 
-                width="720" 
-                height="700"
-              >
-            </div>
-            <div class="conteudo-missao">
-              <h3 class="titulo-bloco-cultura" id="titulo-missao">Missão</h3>
-              <p class="texto-bloco-cultura">
-                Proporcionar momentos de satisfação e conexão por meio da gastronomia, transformando o consumo de hambúrgueres artesanais em uma experiência que une sabor, criatividade e acolhimento, com atenção às necessidades dos clientes e responsabilidade na condução do negócio.
-              </p>
-            </div>
+        <div class="grade-missao">
+          <div class="imagem-missao-container">
+            <img src="assets/photos/img_trio_funcionario.webp"
+              alt="Trio de colaboradores da Larica's Burguer segurando o boné oficial da marca" class="imagem-missao"
+              loading="lazy" width="720" height="700">
+          </div>
+          <div class="conteudo-missao">
+            <h3 class="titulo-bloco-cultura" id="titulo-missao">Missão</h3>
+            <p class="texto-bloco-cultura">
+              Proporcionar momentos de satisfação e conexão por meio da gastronomia, transformando o consumo de
+              hambúrgueres artesanais em uma experiência que une sabor, criatividade e acolhimento, com atenção às
+              necessidades dos clientes e responsabilidade na condução do negócio.
+            </p>
           </div>
         </div>
       </article>
 
       <article class="bloco-cultura-item bloco-visao" id="bloco-visao" aria-labelledby="titulo-visao">
-        <div class="recipiente-conteudo">
-          <div class="grade-visao">
-            <div class="conteudo-visao">
-              <h3 class="titulo-bloco-cultura" id="titulo-visao">Visão</h3>
-              <p class="texto-bloco-cultura">
-                Consolidar-se como uma marca reconhecida no mercado gastronômico de Salvador e, futuramente, expandir sua atuação para outras regiões, construindo uma identidade forte e conquistando a preferência dos consumidores pela originalidade de seus produtos, pela confiança e pela consistência de sua atuação.
-              </p>
-            </div>
-            <div class="imagem-visao-container">
-              <img 
-                src="assets/photos/img_funcionario_acenando.webp" 
-                alt="Colaboradora sorridente vestindo a camisa e o boné laranja da Larica's Burguer acenando com simpatia" 
-                class="imagem-visao" 
-                loading="lazy" 
-                width="720" 
-                height="700"
-              >
-            </div>
+        <div class="grade-visao">
+          <div class="conteudo-visao">
+            <h3 class="titulo-bloco-cultura" id="titulo-visao">Visão</h3>
+            <p class="texto-bloco-cultura">
+              Consolidar-se como uma marca reconhecida no mercado gastronômico de Salvador e, futuramente, expandir
+              sua atuação para outras regiões, construindo uma identidade forte e conquistando a preferência dos
+              consumidores pela originalidade de seus produtos, pela confiança e pela consistência de sua atuação.
+            </p>
+          </div>
+          <div class="imagem-visao-container">
+            <img src="assets/photos/img_funcionario_acenando.webp"
+              alt="Colaboradora sorridente vestindo a camisa e o boné laranja da Larica's Burguer acenando com simpatia"
+              class="imagem-visao" loading="lazy" width="720" height="700">
           </div>
         </div>
       </article>
 
       <article class="bloco-cultura-item bloco-valores" id="bloco-valores" aria-labelledby="titulo-valores">
-        <div class="recipiente-conteudo">
+        <div class="recipiente-diagrama-valores">
           <h3 class="titulo-valores" id="titulo-valores">Valores:</h3>
-          <div class="recipiente-diagrama-valores">
-            <img 
-              src="assets/photos/mao_segurando_hamburguer.webp" 
-              alt="Hambúrguer artesanal suculento segurado por duas mãos evidenciando os valores da Larica's Burguer" 
-              class="imagem-burger-valores" 
-              loading="lazy"
-              width="1200"
-              height="750"
-            >
+
+          <img src="assets/photos/mao_segurando_hamburguer.webp"
+            alt="Hambúrguer artesanal suculento segurado por duas mãos evidenciando os valores da Larica's Burguer"
+            class="imagem-burger-valores" loading="lazy" width="1440" height="666">
+          <div class="item-valor-tag tag-comprometimento">
+            <img src="assets/photos/secao_valores/valor_Comprometimento.png" alt="Comprometimento" loading="lazy">
           </div>
+          <div class="item-valor-tag tag-criatividade">
+            <img src="assets/photos/secao_valores/valor_Criatividade.png" alt="Criatividade" loading="lazy">
+          </div>
+          <div class="item-valor-tag tag-respeito">
+            <img src="assets/photos/secao_valores/valor_Respeito.png" alt="Respeito" loading="lazy">
+          </div>
+          <div class="item-valor-tag tag-transparencia">
+            <img src="assets/photos/secao_valores/valor_Transparencia.png" alt="Transparência" loading="lazy">
+          </div>
+          <div class="item-valor-tag tag-responsabilidade">
+            <img src="assets/photos/secao_valores/valor_Responsabilidade.png" alt="Responsabilidade" loading="lazy">
+          </div>
+          <div class="item-valor-tag tag-valorizacao">
+            <img src="assets/photos/secao_valores/valor_ValorizacaoPessoas.png" alt="Valorização das pessoas"
+              loading="lazy">
+          </div>
+          <div class="item-valor-tag tag-evolucao">
+            <img src="assets/photos/secao_valores/valor_EvolucaoContinua.png" alt="Evolução contínua" loading="lazy">
+          </div>
+        </div>
         </div>
       </article>
 
@@ -167,29 +189,32 @@
 
     <section class="secao-nosso-time" id="secao-nosso-time" aria-labelledby="titulo-nosso-time">
       <div class="recipiente-conteudo">
-        
+
         <div class="cabecalho-secao-time">
           <h2 class="titulo-nosso-time" id="titulo-nosso-time">NOSSO TIME</h2>
           <p class="subtitulo-nosso-time">QUEM FAZ <span>ACONTECER</span></p>
         </div>
 
         <div class="carrossel-time-container">
-          <button class="botao-carrossel botao-anterior" id="botao-carrossel-anterior" aria-label="Membros anteriores do time" title="Voltar grupo de colaboradores">
-            <img src="assets/icons/seta_esquerda.webp" alt="Seta para esquerda" class="icone-seta-carrossel" width="52" height="52">
+          <button class="botao-carrossel botao-anterior" id="botao-carrossel-anterior"
+            aria-label="Membros anteriores do time" title="Voltar grupo de colaboradores">
+            <img src="assets/icons/seta_esquerda.webp" alt="Seta para esquerda" class="icone-seta-carrossel" width="52"
+              height="52">
           </button>
 
           <div class="carrossel-janela">
             <div class="carrossel-trilho" id="carrossel-trilho-time">
-              
+
               <div class="carrossel-pagina" aria-label="Grupo 1 de Colaboradores">
                 <article class="card-membro-time">
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Aline Queiroz</h3>
-                  <p class="cargo-membro">Chef de Cozinha & Criação</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Responsável pelo padrão inconfundível de sabor dos nossos blends, molhos especiais e pelas receitas autorais da Larica's.
+                    Responsável pelo padrão inconfundível de sabor dos nossos blends, molhos especiais e pelas receitas
+                    autorais da Larica's.
                   </p>
                 </article>
 
@@ -197,10 +222,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Lucas Santana</h3>
-                  <p class="cargo-membro">Líder de Grelha & Smash</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Mestre na selagem perfeita e ponto ideal das carnes, trazendo a crostinha crocante e suculência máxima a cada burger.
+                    Mestre na selagem perfeita e ponto ideal das carnes, trazendo a crostinha crocante e suculência
+                    máxima a cada burger.
                   </p>
                 </article>
 
@@ -208,10 +234,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Beatriz Ramos</h3>
-                  <p class="cargo-membro">Gerente de Atendimento</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Garante que a energia baiana, o sorriso acolhedor e a hospitalidade façam parte de cada visita ao nosso salão no Rio Vermelho.
+                    Garante que a energia baiana, o sorriso acolhedor e a hospitalidade façam parte de cada visita ao
+                    nosso salão no Rio Vermelho.
                   </p>
                 </article>
               </div>
@@ -221,10 +248,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Thiago Morais</h3>
-                  <p class="cargo-membro">Coordenador de Dark Kitchens</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Comanda a operação exclusiva de delivery, mantendo os lanches saindo quentinhos e crocantes direto para sua casa.
+                    Comanda a operação exclusiva de delivery, mantendo os lanches saindo quentinhos e crocantes direto
+                    para sua casa.
                   </p>
                 </article>
 
@@ -232,10 +260,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Camila Ferreira</h3>
-                  <p class="cargo-membro">Supervisora de Qualidade</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Inspeciona o frescor dos pães brioche selados, temperos de cogumelos e queijos artesanais da melhor procedência.
+                    Inspeciona o frescor dos pães brioche selados, temperos de cogumelos e queijos artesanais da melhor
+                    procedência.
                   </p>
                 </article>
 
@@ -243,10 +272,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Gabriel Santos</h3>
-                  <p class="cargo-membro">Chapeiro Especialista</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Dedicado à precisão dos blends de 150g e montagem impecável das camadas suculentas de queijo coalho e bacon crocante.
+                    Dedicado à precisão dos blends de 150g e montagem impecável das camadas suculentas de queijo coalho
+                    e bacon crocante.
                   </p>
                 </article>
               </div>
@@ -256,10 +286,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Mariana Lopes</h3>
-                  <p class="cargo-membro">Especialista em Molhos & Criações</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Alquimista por trás da nossa geleia de pimenta artesanal picante e da calda de cheddar cremoso com farofa de bacon.
+                    Alquimista por trás da nossa geleia de pimenta artesanal picante e da calda de cheddar cremoso com
+                    farofa de bacon.
                   </p>
                 </article>
 
@@ -267,10 +298,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Rodrigo Bahia</h3>
-                  <p class="cargo-membro">Logística & Despacho Rápido</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Organiza cada embalagem térmica garantindo que os anéis de cebola e os hambúrgueres cheguem na textura perfeita.
+                    Organiza cada embalagem térmica garantindo que os anéis de cebola e os hambúrgueres cheguem na
+                    textura perfeita.
                   </p>
                 </article>
 
@@ -278,10 +310,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Juliana Vieira</h3>
-                  <p class="cargo-membro">Anfitriã de Salão</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Recepciona os clientes com alegria e atenção a cada detalhe, assegurando uma experiência memorável para toda a família.
+                    Recepciona os clientes com alegria e atenção a cada detalhe, assegurando uma experiência memorável
+                    para toda a família.
                   </p>
                 </article>
               </div>
@@ -291,10 +324,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Felipe Menezes</h3>
-                  <p class="cargo-membro">Auxiliar de Parrilla & Smash</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Garante o fluxo ágil e higienização impecável na chapa durante os horários de maior movimento noturno.
+                    Garante o fluxo ágil e higienização impecável na chapa durante os horários de maior movimento
+                    noturno.
                   </p>
                 </article>
 
@@ -302,10 +336,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Larissa Dantas</h3>
-                  <p class="cargo-membro">Comunicação & Relacionamento</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Cuida do feedback diário dos clientes, redes sociais e da proximidade afetiva entre a comunidade e a hamburgueria.
+                    Cuida do feedback diário dos clientes, redes sociais e da proximidade afetiva entre a comunidade e a
+                    hamburgueria.
                   </p>
                 </article>
 
@@ -313,10 +348,11 @@
                   <div class="foto-circulo-container">
                     <span class="icone-membro-padrao" aria-hidden="true">&#128100;</span>
                   </div>
-                  <h3 class="nome-membro">Danilo Cruz</h3>
-                  <p class="cargo-membro">Gestão de Suprimentos</p>
+                  <h3 class="nome-membro">Nome Sobrenome</h3>
+                  <p class="cargo-membro">Função Colaborador</p>
                   <p class="descricao-membro">
-                    Seleciona diariamente os produtores locais de queijo coalho e hortifrúti fresco de Salvador para os nossos burgers.
+                    Seleciona diariamente os produtores locais de queijo coalho e hortifrúti fresco de Salvador para os
+                    nossos burgers.
                   </p>
                 </article>
               </div>
@@ -324,8 +360,10 @@
             </div>
           </div>
 
-          <button class="botao-carrossel botao-proximo" id="botao-carrossel-proximo" aria-label="Próximos membros do time" title="Avançar grupo de colaboradores">
-            <img src="assets/icons/seta_direita.webp" alt="Seta para direita" class="icone-seta-carrossel" width="52" height="52">
+          <button class="botao-carrossel botao-proximo" id="botao-carrossel-proximo"
+            aria-label="Próximos membros do time" title="Avançar grupo de colaboradores">
+            <img src="assets/icons/seta_direita.webp" alt="Seta para direita" class="icone-seta-carrossel" width="52"
+              height="52">
           </button>
         </div>
 
@@ -341,111 +379,106 @@
 
     <section class="secao-cardapio" id="secao-cardapio" aria-labelledby="badge-cardapio-titulo">
       <div class="recipiente-conteudo">
-        
+
         <div class="cabecalho-cardapio">
           <span class="badge-cardapio" id="badge-cardapio-titulo">CARDÁPIO</span>
         </div>
 
         <div class="grade-cardapio">
-          
+
           <article class="card-item-cardapio" aria-labelledby="nome-x-la-ele">
             <div class="imagem-item-wrapper">
-              <img 
-                src="assets/photos/cardapio/xLaEle.webp" 
-                alt="Hambúrguer X-Lá Ele com carne de 150g, queijo coalho grelhado, calabresa defumada e bacon" 
-                class="imagem-item-cardapio" 
-                loading="lazy" 
-                width="360" 
-                height="400"
-              >
+              <img src="assets/photos/cardapio/xLaEle.webp"
+                alt="Hambúrguer X-Lá Ele com carne de 150g, queijo coalho grelhado, calabresa defumada e bacon"
+                class="imagem-item-cardapio" loading="lazy" width="360" height="400">
             </div>
             <div class="informacoes-item-cardapio">
-              <h3 class="nome-item-cardapio" id="nome-x-la-ele">X-Lá Ele</h3>
+              <div class="cabecalho-item-cardapio">
+                <h3 class="nome-item-cardapio" id="nome-x-la-ele">X-Lá Ele</h3>
+                <div class="preco-item-badge">R$ 29,90</div>
+              </div>
               <p class="descricao-item-cardapio">
-                Blend de carne artesanal de 150g suculento, uma fatia generosa de queijo coalho grelhado na chapa, rodelas de calabresa defumada, bacon crocante, alface, tomate e o toque arretado de geleia de pimenta levemente picante. Tudo isso no pão brioche selado na manteiga.
+                Blend de carne artesanal de 150g suculento, uma fatia generosa de queijo coalho grelhado na chapa,
+                rodelas de calabresa defumada, bacon crocante, alface, tomate e o toque arretado de geleia de pimenta
+                levemente picante. Tudo isso no pão brioche selado na manteiga.
               </p>
             </div>
-            <div class="preco-item-badge">R$ 29,90</div>
           </article>
 
           <article class="card-item-cardapio" aria-labelledby="nome-quebradeira">
             <div class="imagem-item-wrapper">
-              <img 
-                src="assets/photos/cardapio/quebradeira.webp" 
-                alt="Hambúrguer Quebradeira com duas carnes smash, calda de cheddar cremoso e cebola caramelizada" 
-                class="imagem-item-cardapio" 
-                loading="lazy" 
-                width="360" 
-                height="400"
-              >
+              <img src="assets/photos/cardapio/quebradeira.webp"
+                alt="Hambúrguer Quebradeira com duas carnes smash, calda de cheddar cremoso e cebola caramelizada"
+                class="imagem-item-cardapio" loading="lazy" width="360" height="400">
             </div>
             <div class="informacoes-item-cardapio">
-              <h3 class="nome-item-cardapio" id="nome-quebradeira">Quebradeira</h3>
+              <div class="cabecalho-item-cardapio">
+                <h3 class="nome-item-cardapio" id="nome-quebradeira">Quebradeira</h3>
+                <div class="preco-item-badge">R$ 25,90</div>
+              </div>
               <p class="descricao-item-cardapio">
-                Uma verdadeira avalanche de sabor! Duas carnes smash de 100g bem grelhadas, cobertas com muuuita calda de cheddar cremoso (bem laranjada!), muito bacon crocante e cebola caramelizada no capricho, servidos no pão brioche bem macio.
+                Uma verdadeira avalanche de sabor! Duas carnes smash de 100g bem grelhadas, cobertas com muuuita calda
+                de cheddar cremoso (bem laranjada!), muito bacon crocante e cebola caramelizada no capricho, servidos no
+                pão brioche bem macio.
               </p>
             </div>
-            <div class="preco-item-badge">R$ 25,90</div>
           </article>
 
           <article class="card-item-cardapio" aria-labelledby="nome-big-laranjada">
             <div class="imagem-item-wrapper">
-              <img 
-                src="assets/photos/cardapio/bigLaranjada.webp" 
-                alt="Hambúrguer Big Laranjada com anéis de cebola gigantes, cheddar derretido e barbecue artesanal" 
-                class="imagem-item-cardapio" 
-                loading="lazy" 
-                width="360" 
-                height="400"
-              >
+              <img src="assets/photos/cardapio/bigLaranjada.webp"
+                alt="Hambúrguer Big Laranjada com anéis de cebola gigantes, cheddar derretido e barbecue artesanal"
+                class="imagem-item-cardapio" loading="lazy" width="360" height="400">
             </div>
             <div class="informacoes-item-cardapio">
-              <h3 class="nome-item-cardapio" id="nome-big-laranjada">Big Laranjada</h3>
+              <div class="cabecalho-item-cardapio">
+                <h3 class="nome-item-cardapio" id="nome-big-laranjada">Big Laranjada</h3>
+                <div class="preco-item-badge">R$ 32,90</div>
+              </div>
               <p class="descricao-item-cardapio">
-                Pra derrubar qualquer fome! Dois blends smash de 100g, cheddar derretido, farofa de bacon e uma torre de anéis de cebola gigantes e supercrocantes (a verdadeira quebradeira!), finalizado com muito molho barbecue artesanal no pão com gergelim.
+                Pra derrubar qualquer fome! Dois blends smash de 100g, cheddar derretido, farofa de bacon e uma torre de
+                anéis de cebola gigantes e supercrocantes (a verdadeira quebradeira!), finalizado com muito molho
+                barbecue artesanal no pão com gergelim.
               </p>
             </div>
-            <div class="preco-item-badge">R$ 32,90</div>
           </article>
 
           <article class="card-item-cardapio" aria-labelledby="nome-x-migue">
             <div class="imagem-item-wrapper">
-              <img 
-                src="assets/photos/cardapio/xMigue.webp" 
-                alt="Hambúrguer vegetariano X-Migué com blend de cogumelos e grãos, queijo derretido e molho especial" 
-                class="imagem-item-cardapio" 
-                loading="lazy" 
-                width="360" 
-                height="400"
-              >
+              <img src="assets/photos/cardapio/xMigue.webp"
+                alt="Hambúrguer vegetariano X-Migué com blend de cogumelos e grãos, queijo derretido e molho especial"
+                class="imagem-item-cardapio" loading="lazy" width="360" height="400">
             </div>
             <div class="informacoes-item-cardapio">
-              <h3 class="nome-item-cardapio" id="nome-x-migue">X-Migué</h3>
+              <div class="cabecalho-item-cardapio">
+                <h3 class="nome-item-cardapio" id="nome-x-migue">X-Migué</h3>
+                <div class="preco-item-badge">R$ 25,90</div>
+              </div>
               <p class="descricao-item-cardapio">
-                Parece carne, mas é 100% vegetariano! Um baita blend artesanal de cogumelos e grãos bem temperado, queijo derretido, e uma salada especial super colorida e fresca com alface, tomate, cebola roxa e o molho especial da Larica's no pão com gergelim.
+                Parece carne, mas é 100% vegetariano! Um baita blend artesanal de cogumelos e grãos bem temperado,
+                queijo derretido, e uma salada especial super colorida e fresca com alface, tomate, cebola roxa e o
+                molho especial da Larica's no pão com gergelim.
               </p>
             </div>
-            <div class="preco-item-badge">R$ 25,90</div>
           </article>
 
           <article class="card-item-cardapio" aria-labelledby="nome-barril-dobrado">
             <div class="imagem-item-wrapper">
-              <img 
-                src="assets/photos/cardapio/barrilDobrado.webp" 
-                alt="Hambúrguer Barril Dobrado com dois blends de 150g, queijo cheddar e queijo prato derretidos" 
-                class="imagem-item-cardapio" 
-                loading="lazy" 
-                width="360" 
-                height="400"
-              >
+              <img src="assets/photos/cardapio/barrilDobrado.webp"
+                alt="Hambúrguer Barril Dobrado com dois blends de 150g, queijo cheddar e queijo prato derretidos"
+                class="imagem-item-cardapio" loading="lazy" width="360" height="400">
             </div>
             <div class="informacoes-item-cardapio">
-              <h3 class="nome-item-cardapio" id="nome-barril-dobrado">Barril Dobrado</h3>
+              <div class="cabecalho-item-cardapio">
+                <h3 class="nome-item-cardapio" id="nome-barril-dobrado">Barril Dobrado</h3>
+                <div class="preco-item-badge">R$ 36,90</div>
+              </div>
               <p class="descricao-item-cardapio">
-                Duas vezes mais pesado, duas vezes mais gostoso! Dois blends de carne artesanal "gordinha" de 150g cada, absurdamente suculentos, com camadas duplas e generosas de queijo cheddar e prato derretidos em um pão brioche rústico selado. É bruto, é direto, é barril dobrado!
+                Duas vezes mais pesado, duas vezes mais gostoso! Dois blends de carne artesanal "gordinha" de 150g cada,
+                absurdamente suculentos, com camadas duplas e generosas de queijo cheddar e prato derretidos em um pão
+                brioche rústico selado. É bruto, é direto, é barril dobrado!
               </p>
             </div>
-            <div class="preco-item-badge">R$ 36,90</div>
           </article>
 
         </div>
@@ -457,11 +490,12 @@
   <footer class="rodape-principal" id="rodape-principal">
     <div class="recipiente-conteudo">
       <div class="grade-rodape">
-        
+
         <div class="coluna-rodape">
           <h4 class="titulo-coluna-rodape">LARICA'S BURGUER</h4>
           <p class="descricao-marca-rodape">
-            Hambúrguer artesanal preparado com paixão, insumos selecionados e o verdadeiro sabor smash. O destino certo para matar a sua larica.
+            Hambúrguer artesanal preparado com paixão, insumos selecionados e o verdadeiro sabor smash. O destino certo
+            para matar a sua larica.
           </p>
         </div>
 
@@ -488,23 +522,14 @@
           <p class="texto-info-rodape">Delivery Próprio e iFood</p>
 
           <div class="redes-sociais-rodape">
-            <a 
-              href="https://www.instagram.com/_laricasburger20" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="icone-rede-social" 
-              aria-label="Acessar página do Instagram da Larica's Burguer"
-              title="Instagram Oficial"
-            >
+            <a href="https://www.instagram.com/_laricasburger20" target="_blank" rel="noopener noreferrer"
+              class="icone-rede-social" aria-label="Acessar página do Instagram da Larica's Burguer"
+              title="Instagram Oficial">
               <img src="assets/icons/instagram.png" alt="Instagram" class="icone-imagem-social" width="22" height="22">
             </a>
 
-            <a 
-              href="mailto:laricasburguer2602@gmail.com" 
-              class="icone-rede-social" 
-              aria-label="Enviar e-mail para laricasburguer2602@gmail.com"
-              title="Enviar E-mail"
-            >
+            <a href="mailto:laricasburguer2602@gmail.com" class="icone-rede-social"
+              aria-label="Enviar e-mail para laricasburguer2602@gmail.com" title="Enviar E-mail">
               <img src="assets/icons/email.png" alt="E-mail" class="icone-imagem-social" width="22" height="22">
             </a>
           </div>
@@ -516,10 +541,12 @@
 
       <div class="subrodape-termos">
         <p>&copy; 2026 Larica's Burguer. Todos os direitos reservados.</p>
-        <p>O Larica's Burguer é um projeto acadêmico desenvolvido para fins de aprendizado educacional. Livre de fins comerciais.</p>
+        <p>O Larica's Burguer é um projeto acadêmico desenvolvido para fins de aprendizado educacional. Livre de fins
+          comerciais.</p>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>
