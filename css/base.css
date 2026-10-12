@@ -21,10 +21,8 @@
   --sombra-card: 0 10px 25px rgba(184, 73, 49, 0.08);
   --sombra-card-hover: 0 16px 35px rgba(184, 73, 49, 0.16);
   --transicao-padrao: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --fonte-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --fonte-titulo: 'Montserrat', var(--fonte-principal);
-  --fonte-principal: 'Alexandria', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --fonte-titulo: 'Alexandria', 'Montserrat', var(--fonte-principal);
+  --fonte-principal: 'Alexandria', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --fonte-titulo: 'Alexandria', var(--fonte-principal);
 }
 
 * {
