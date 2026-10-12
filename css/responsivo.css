@@ -203,6 +203,12 @@
     aspect-ratio: 4 / 3;
   }
 
+  .imagem-missao-container.revelacao-pendente,
+  .imagem-visao-container.revelacao-pendente {
+    opacity: 1;
+    clip-path: inset(0);
+  }
+
   .conteudo-missao,
   .conteudo-visao {
     padding: 44px 24px 52px;
