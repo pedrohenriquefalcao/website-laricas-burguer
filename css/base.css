@@ -194,6 +194,7 @@ button {
   font-family: var(--fonte-titulo);
   font-weight: 900;
   line-height: 1.05;
+  text-align: left;
   text-transform: uppercase;
   color: var(--cor-texto-principal);
   margin-bottom: 24px;
@@ -201,16 +202,15 @@ button {
 
 .titulo-linha-um {
   display: block;
-  font-size: clamp(1.3rem, 2.4vw, 2rem);
-  font-weight: 800;
-  letter-spacing: 0.04em;
+font-size: clamp(1.326rem, 2.448vw, 2.04rem);  font-weight: 800;
+  letter-spacing: 0.05em;
   white-space: nowrap;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .destaque-gradiente-texto {
   display: block;
-  font-size: clamp(2.8rem, 6.2vw, 5rem);
+  font-size: clamp(3.08rem, 6.82vw, 5.5rem);
   font-weight: 900;
   line-height: 1;
   background: linear-gradient(90deg, #E8B83F 0%, #B84931 50%, #B84931 100%);
@@ -268,4 +268,3 @@ button {
     transform: translateY(-12px);
   }
 }
-

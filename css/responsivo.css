@@ -1,8 +1,12 @@
-﻿@media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .conteudo-inicio {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 40px;
+  }
+
+  .titulo-inicio {
+    text-align: center;
   }
 
   .descricao-inicio {
