@@ -96,6 +96,26 @@ website-laricas-burguer/
 | **X-Migué** 🌱 | Vegetarian mushroom-and-grain patty, cheese, and house sauce | R$ 25.90 |
 | **Barril Dobrado** | Two 150g patties with cheddar and prato cheese | R$ 36.90 |
 
+<<<<<<< HEAD
+=======
+## 👥 Team (fictional company)
+
+| Name | Role |
+| --- | --- |
+| Nélia | General Manager |
+| Amanda Santiago | Coordinator |
+| Nicole Cardoso | HR Manager |
+| Elaine Maciel | Finance Manager |
+| Andreza Portugal | Marketing Manager |
+| Igor Fiuza | Operations Manager |
+| Letícia Silva | Customer Relations Manager |
+| Franciele Menezes | Head Chef |
+| Evelyn Araújo | Sous Chef |
+| Nadson Veloso | Logistics & Fleet Manager |
+| João Lucas Santos | Procurement Manager |
+| Rayan Nogueira | Innovation & IT Manager |
+
+>>>>>>> 776b3ecd4f9a8ad8386106f3d313df3b9a0fe244
 ## 🎓 Academic context
 
 Built for a team of **UniAnhanguera** students as promotional material for their fictional company, **Larica's Burguer**.
@@ -104,4 +124,14 @@ Built for a team of **UniAnhanguera** students as promotional material for their
 
 Developed by **[@pedrohenriquefalcao](https://github.com/pedrohenriquefalcao)**.
 
+<<<<<<< HEAD
 
+=======
+---
+
+<div align="center">
+
+Made with 🧡 and a serious case of the munchies.
+
+</div>
+>>>>>>> 776b3ecd4f9a8ad8386106f3d313df3b9a0fe244
