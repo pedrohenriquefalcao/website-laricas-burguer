@@ -12,28 +12,29 @@ function inicializarAnimacoesRevelacao() {
     '.banner-cultura-topo, .imagem-missao-container, .imagem-visao-container, .bloco-valores'
   );
 
-  if (!elementos.length || !('IntersectionObserver' in window)) {
-    return;
-  }
+  if (!elementos.length || !('IntersectionObserver' in window)) return;
+
+  const alvos = new Map(); 
 
   elementos.forEach(elemento => {
     elemento.classList.add('revelacao-pendente');
+    const observado = elemento.closest('.bloco-cultura-item') || elemento;
+    alvos.set(observado, elemento);
   });
 
   const observador = new IntersectionObserver((entradas, observer) => {
     entradas.forEach(entrada => {
       if (!entrada.isIntersecting) return;
-
-      entrada.target.classList.add('revelacao-visivel');
+      alvos.get(entrada.target).classList.add('revelacao-visivel');
       observer.unobserve(entrada.target);
     });
-  }, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  });
+  }, { root: null, rootMargin: '0px', threshold: 0.1 });
 
-  elementos.forEach(elemento => observador.observe(elemento));
+  alvos.forEach((_, observado) => observador.observe(observado));
+
+  setTimeout(() => {
+    elementos.forEach(el => el.classList.add('revelacao-visivel'));
+  }, 4000);
 }
 
 function inicializarOcultarNavbar() {
