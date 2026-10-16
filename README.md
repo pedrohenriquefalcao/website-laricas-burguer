@@ -96,43 +96,13 @@ website-laricas-burguer/
 | **X-Migué** 🌱 | Blend vegetariano de cogumelos e grãos, queijo e molho especial | R$ 25,90 |
 | **Barril Dobrado** | Dois blends de 150g com cheddar e queijo prato | R$ 36,90 |
 
-<<<<<<< HEAD
-=======
-## 👥 Time (empresa fictícia)
 
-| Nome | Cargo |
-| --- | --- |
-| Nélia | Gerente Geral |
-| Amanda Santiago | Coordenadora |
-| Nicole Cardoso | Gerente de RH |
-| Elaine Maciel | Gerente Financeiro |
-| Andreza Portugal | Gerente de Marketing |
-| Igor Fiuza | Gerente de Operações |
-| Letícia Silva | Gerente de Relacionamentos |
-| Franciele Menezes | Chef de Cozinha |
-| Evelyn Araújo | Subchef de Cozinha |
-| Nadson Veloso | Gerente de Logística e Frota |
-| João Lucas Santos | Gerente de Suprimentos (Compras) |
-| Rayan Nogueira | Gerente de Inovação e T.I. |
-
->>>>>>> 776b3ecd4f9a8ad8386106f3d313df3b9a0fe244
 ## 🎓 Contexto acadêmico
 
 Desenvolvido para uma equipe de estudantes da **UniAnhanguera** como material de divulgação da empresa fictícia **Larica's Burguer**.
 
 ## 👨‍💻 Autor
 
-<<<<<<< HEAD
-Desenvolvido por **[@pedrohenriquefalcao](https://github.com/pedrohenriquefalcao)**
-
-=======
 Desenvolvido por **[@pedrohenriquefalcao](https://github.com/pedrohenriquefalcao)**.
 
----
 
-<div align="center">
-
-Feito com 🧡 e muita larica.
-
-</div>
->>>>>>> 776b3ecd4f9a8ad8386106f3d313df3b9a0fe244
