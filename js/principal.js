@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   inicializarNavegacaoAtiva();
   inicializarCarrosselTime();
   inicializarScrollSuave();
-  inicializarOcultarNavbar(); 
+  inicializarOcultarNavbar();
   inicializarAnimacoesRevelacao();
+  inicializarFecharPopupAoRolar();
 });
 
 function inicializarAnimacoesRevelacao() {
@@ -14,7 +15,7 @@ function inicializarAnimacoesRevelacao() {
 
   if (!elementos.length || !('IntersectionObserver' in window)) return;
 
-  const alvos = new Map(); 
+  const alvos = new Map();
 
   elementos.forEach(elemento => {
     elemento.classList.add('revelacao-pendente');
@@ -53,13 +54,13 @@ function inicializarOcultarNavbar() {
 
     if (scrollAtual > ultimoScroll) {
       cabecalho.style.transform = 'translateY(-100%)';
-    } 
+    }
     else {
       cabecalho.style.transform = 'translateY(0)';
     }
 
     ultimoScroll = scrollAtual;
-  }, { passive: true }); 
+  }, { passive: true });
 }
 
 function inicializarMenuMobile() {
@@ -136,7 +137,7 @@ function inicializarNavegacaoAtiva() {
     {
       root: null,
       rootMargin: '-20% 0px -50% 0px',
-      threshold: 0 
+      threshold: 0
     }
   );
 
@@ -271,7 +272,7 @@ function inicializarScrollSuave() {
         evento.preventDefault();
         const alturaCabecalho = document.getElementById('cabecalho-topo')?.offsetHeight || 72;
         const posicaoElemento = elementoAlvo.getBoundingClientRect().top + window.scrollY;
-        
+
         window.scrollTo({
           top: posicaoElemento - alturaCabecalho,
           behavior: 'smooth'
@@ -279,4 +280,16 @@ function inicializarScrollSuave() {
       }
     });
   });
+}
+
+function inicializarFecharPopupAoRolar() {
+  const fecharPopupAtivo = () => {
+    const ativo = document.activeElement;
+    if (ativo && ativo.classList.contains('item-valor-tag')) {
+      ativo.blur();
+    }
+  };
+
+  window.addEventListener('scroll', fecharPopupAtivo, { passive: true });
+  window.addEventListener('touchmove', fecharPopupAtivo, { passive: true });
 }
