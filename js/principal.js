@@ -14,29 +14,59 @@ function inicializarAnimacoesRevelacao() {
     '.banner-cultura-topo, .imagem-missao-container, .imagem-visao-container, .bloco-valores'
   );
 
-  if (!elementos.length || !('IntersectionObserver' in window)) return;
+  if (!elementos.length) return;
+
+  const reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduzMovimento || !('IntersectionObserver' in window)) return;
+
+  const TEMPO_MAX_IMAGEM = 1500; 
+
+  function aguardarImagens(elemento) {
+    const imagens = Array.from(elemento.querySelectorAll('img'));
+
+    const carregamentos = imagens.map(img => {
+      img.loading = 'eager'; 
+      if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+
+      return new Promise(resolve => {
+        img.addEventListener('load', resolve, { once: true });
+        img.addEventListener('error', resolve, { once: true });
+      });
+    });
+
+    const limite = new Promise(resolve => setTimeout(resolve, TEMPO_MAX_IMAGEM));
+    return Promise.race([Promise.all(carregamentos), limite]);
+  }
+
+  function revelar(elemento) {
+    aguardarImagens(elemento).then(() => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => elemento.classList.add('revelacao-visivel'));
+      });
+    });
+  }
 
   const alvos = new Map();
 
   elementos.forEach(elemento => {
     elemento.classList.add('revelacao-pendente');
     const observado = elemento.closest('.bloco-cultura-item') || elemento;
-    alvos.set(observado, elemento);
+    if (!alvos.has(observado)) alvos.set(observado, []);
+    alvos.get(observado).push(elemento);
   });
 
   const observador = new IntersectionObserver((entradas, observer) => {
     entradas.forEach(entrada => {
-      if (!entrada.isIntersecting) return;
-      alvos.get(entrada.target).classList.add('revelacao-visivel');
+      const acimaDaTela = !entrada.isIntersecting && entrada.boundingClientRect.top < 0;
+
+      if (!entrada.isIntersecting && !acimaDaTela) return;
+
+      alvos.get(entrada.target).forEach(revelar);
       observer.unobserve(entrada.target);
     });
-  }, { root: null, rootMargin: '0px', threshold: 0.1 });
+  }, { root: null, rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
 
   alvos.forEach((_, observado) => observador.observe(observado));
-
-  setTimeout(() => {
-    elementos.forEach(el => el.classList.add('revelacao-visivel'));
-  }, 4000);
 }
 
 function inicializarOcultarNavbar() {
