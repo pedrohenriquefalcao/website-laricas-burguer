@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   inicializarOcultarNavbar();
   inicializarAnimacoesRevelacao();
   inicializarFecharPopupAoRolar();
+  inicializarBotoesPedir();
 });
 
 function inicializarAnimacoesRevelacao() {
@@ -292,4 +293,31 @@ function inicializarFecharPopupAoRolar() {
 
   window.addEventListener('scroll', fecharPopupAtivo, { passive: true });
   window.addEventListener('touchmove', fecharPopupAtivo, { passive: true });
+}
+
+function inicializarBotoesPedir() {
+  const botoes = document.querySelectorAll('.botao-pedir-agora');
+  if (!botoes.length) return;
+
+  const semMouse = window.matchMedia('(hover: none)');
+  const DURACAO_ANIMACAO = 500; 
+
+  botoes.forEach(botao => {
+    botao.addEventListener('click', (evento) => {
+      if (!semMouse.matches) return;
+
+      evento.preventDefault();
+      if (botao.classList.contains('preenchendo')) return;
+
+      botao.classList.add('preenchendo');
+
+      setTimeout(() => {
+        window.location.href = botao.href;
+      }, DURACAO_ANIMACAO);
+    });
+  });
+
+  window.addEventListener('pageshow', () => {
+    botoes.forEach(b => b.classList.remove('preenchendo'));
+  });
 }

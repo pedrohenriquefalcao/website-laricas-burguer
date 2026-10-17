@@ -419,12 +419,13 @@
 
   .card-item-cardapio {
     grid-template-columns: 1fr;
-    text-align: center;
     gap: 20px;
+    padding: 16px;
   }
 
-  .imagem-item-wrapper {
-    margin: 0 auto;
+.imagem-item-wrapper {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
   }
 
   .cabecalho-item-cardapio {
@@ -434,7 +435,7 @@
   }
 
   .informacoes-item-cardapio {
-    gap: 20px;
+    padding: 0 4px 4px;
   }
 
   .grade-rodape {
